@@ -16,7 +16,7 @@ jobs:
             cat README.md
 
       - name: Gneerate ASCII Artwork
-        uses: cowsay -f dragon "Run for cover,I am a Dragon....RAWR">> dragon.txt
+        run: cowsay -f dragon "Run for cover,I am a Dragon....RAWR">> dragon.txt
            
 
 
