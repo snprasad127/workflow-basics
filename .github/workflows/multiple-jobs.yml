@@ -12,11 +12,11 @@ jobs:
       - name: Generate ASCII Artwork
         run: cowsay -f dragon "Run for cover, I am a Dragon....RAWR" >> dragon.txt
 
-    #   - name: Upload artifact
-    #     uses: actions/upload-artifact@v4
-    #     with:
-    #       name: dragon-file
-    #       path: dragon.txt
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dragon-file
+          path: dragon.txt
 
   second_job:
     runs-on: ubuntu-latest
