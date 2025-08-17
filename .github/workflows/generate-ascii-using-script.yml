@@ -1,0 +1,29 @@
+name: Generate ASCII Artwork
+
+on: push
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the repository
+        uses: actions/checkout@v5
+
+      - name: List repository files
+        run: ls -ltra
+    
+      - name: Execute shell script
+        run: ./scripts/ascii-script.sh
+
+
+           
+
+
+    #   - name: welcome message
+    #     run: echo "my first github actions work"
+      
+    #   - name: list files
+    #     run: ls
+
+    #   - name: read files
+    #     run: cat README.md
